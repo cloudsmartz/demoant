@@ -17,9 +17,7 @@
 	<target name="war" depends="">
 		<echo message="Building for environment:DEV"/>
 		<echo message="Manually Changed build.xml file"/>
-		<echo message="=============demoant_newmaster project is here===================================="/>
-		<echo message="------------------------------------------------------"/>
-		<echo message="------email part can be configured----------"/>
+		<echo message="=============demoantpro's feature is here===================================="/>
 		<mkdir dir="${build-directory}" />
 		<delete file="${build-directory}/${war-file-name}" />
 		<rename src="WebContent/DEV_config.properties" dest="WebContent/config.properties"/>
