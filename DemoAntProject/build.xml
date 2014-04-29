@@ -15,10 +15,10 @@
 	<property name="build-directory" value="build" />
 
 	<target name="war" depends="">
-		<echo message="Building for environment:${env}"/>
+		<echo message="Building for environment:DEV"/>
 		<mkdir dir="${build-directory}" />
 		<delete file="${build-directory}/${war-file-name}" />
-		<rename src="WebContent/${env}_config.properties" dest="WebContent/config.properties"/>
+		<rename src="WebContent/DEV_config.properties" dest="WebContent/config.properties"/>
 		<war warfile="${build-directory}/${war-file-name}" webxml="${web-xml-file}">
 			<classes dir="${classes-directory}" />
 			<fileset dir="${web-directory}">
