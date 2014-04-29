@@ -16,7 +16,7 @@
 
 	<target name="war" depends="">
 		<echo message="Building for environment:DEV"/>
-		<echo message="=============feature1 branch is here===================================="/>
+		<echo message="=====#######erwefwfdfsferfgegrgerg========feature1 branch is here===================================="/>
 		<mkdir dir="${build-directory}" />
 		<delete file="${build-directory}/${war-file-name}" />
 		<rename src="WebContent/DEV_config.properties" dest="WebContent/config.properties"/>
